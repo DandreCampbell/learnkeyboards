@@ -1,0 +1,9 @@
+.dropdown-style {
+    color: black;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.dropdown-style:hover {
+    color: #F2681E;
+}
