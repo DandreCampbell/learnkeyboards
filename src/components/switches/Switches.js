@@ -1,37 +1,37 @@
 import React from 'react';
+import '../styles.css';
+import { Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
-
-const Title = styled.h1`
-    padding-top: 5%;
-    text-align: center;
-    font-size: 45px;
-    color: #13315C;
-    text-decoration: underline 3px;
-`;
 
 const Type = styled.h2`
     padding-top: 20px;
     text-align: center;
     font-size: 36px;
-    color: #F2681E;
+    color: #d35b1a;
 `;
 
 const Details = styled.p`
-    width: 65%;
+    width: 70%;
     margin: auto;
     font-size: 20px;
 `;
 
 export default function Switches() {
     return (
-        <div id="switches">
-            <Title>Types of Switches</Title>
+        <div id="switches" className="new-page">
+            <h1 className="page-title">Types of Switches</h1>
             <Type>Linear</Type>
             <Details>
                 A linear switch doesn’t have a “bump”. Simply put, the deeper you 
                 press down a button, the harder it pushed back against your finger. 
                 Think of it as pushing down a spring.
             </Details>
+            {/* 
+                Telios {md=4}
+                Cream {md=4}
+                Vintage Black {md=4}
+            */}
+
             <Type style={{paddingTop:"35px"}}>Clicky</Type>
             <Details>
                 A clicky switch is similar to a tactile switch, except it produces 
@@ -40,6 +40,12 @@ export default function Switches() {
                 Some prefer the “soft click” of the Cherry MX Whites, which still offers 
                 a click but is less distinct.
             </Details>
+            {/* 
+                Kailh Box White
+                Blue 
+                Green
+            */}
+
             <Type style={{paddingTop:"35px"}}>Tactile</Type>
             <Details>
                 A tactile switch has a “bump” when it is pressed. When you push a tactile 
@@ -50,6 +56,11 @@ export default function Switches() {
                 actuation point is never at the bottom of the switch, meaning actuation will 
                 always happen before the switch is fully pressed down.
             </Details>
+            {/* 
+                ZugGear T1 Tactile Switch
+                Drop Halo
+                Holy Pandas
+            */}
         </div>
     )
 }

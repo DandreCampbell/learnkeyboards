@@ -1,0 +1,13 @@
+.img-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 850px) {
+    .img-style {
+        width: 100%;
+    }
+}

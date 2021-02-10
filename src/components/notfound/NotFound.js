@@ -20,14 +20,19 @@ export default function NotFound() {
                 <h1 style={{
                     fontSize: "45px", 
                     margin:"auto", 
-                    color:"#13315C", 
+                    color:"black", 
                     paddingBottom:"20px"
                 }}>
                     Learn Keyboards
                 </h1>
             </a>
             <img src={pic} alt="Productivity Illustration" width="275px" height="auto" style={coolImage} />
-            <h2 style={{fontSize: "24px", textAlign:"center", paddingTop:"30px", color:"#13315C"}}>
+            <h2 style={{
+                fontSize: "24px", 
+                textAlign:"center", 
+                paddingTop:"30px", 
+                color:"black"
+            }}>
                 Page Not Available
             </h2>
         </div>
