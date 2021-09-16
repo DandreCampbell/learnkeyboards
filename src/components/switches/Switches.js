@@ -3,6 +3,16 @@ import '../styles.css';
 import { Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 
+import blue2 from './img/blue/blue2.png';
+import blue3 from './img/blue/blue3.png';
+
+import brown1 from './img/brown/brown1.png';
+import brown2 from './img/brown/brown2.png';
+import brown3 from './img/brown/brown3.png';
+
+const blues = [ blue2, blue3, blue2 ];
+const browns = [ brown1, brown2, brown3 ];
+
 const Type = styled.h2`
     padding-top: 20px;
     text-align: center;
@@ -15,6 +25,13 @@ const Details = styled.p`
     margin: auto;
     font-size: 20px;
 `;
+
+const centering = {
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center",
+    margin:"auto"
+};
 
 export default function Switches() {
     return (
@@ -40,6 +57,13 @@ export default function Switches() {
                 Some prefer the “soft click” of the Cherry MX Whites, which still offers 
                 a click but is less distinct.
             </Details>
+            <Row style={{width:"85%", display:"flex", margin:"auto", paddingTop:"35px"}}>
+                {blues.map((item, index) => (
+                    <Col>
+                        <img src={blues[index]} alt="Blue Switches" width="200px" height="auto" style={centering} />
+                    </Col>
+                ))}
+            </Row>
             {/* 
                 Kailh Box White
                 Blue 
@@ -56,6 +80,13 @@ export default function Switches() {
                 actuation point is never at the bottom of the switch, meaning actuation will 
                 always happen before the switch is fully pressed down.
             </Details>
+            <Row style={{width:"85%", display:"flex", margin:"auto", paddingTop:"35px"}}>
+                {browns.map((item, index) => (
+                    <Col>
+                        <img src={browns[index]} alt="Brown Switches" width="50%" height="auto" style={centering} />
+                    </Col>
+                ))}
+            </Row>
             {/* 
                 ZugGear T1 Tactile Switch
                 Drop Halo

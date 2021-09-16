@@ -18,21 +18,21 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
   return (
-      <Router>
-        <NavBar /> 
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/sizes" component={Sizes} />
-          <Route path="/switches" component={Switches} />
-          <Route path="/mods" component={Modifications} />
- 
-          <Route path="/budget/affordable" component={Affordable} />
-          <Route path="/budget/midrange" component={MidRange} />
-          <Route path="/budget/expensive" component={Expensive} />
+    <Router>
+      <NavBar /> 
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/sizes" component={Sizes} />
+        <Route path="/switches" component={Switches} />
+        <Route path="/mods" component={Modifications} />
 
-          <Route component={NotFound} />
-        </Switch>
-      </Router>
+        <Route path="/budget/affordable" component={Affordable} />
+        <Route path="/budget/midrange" component={MidRange} />
+        <Route path="/budget/expensive" component={Expensive} />
+
+        <Route component={NotFound} />
+      </Switch>
+    </Router>
   );
 }
 
