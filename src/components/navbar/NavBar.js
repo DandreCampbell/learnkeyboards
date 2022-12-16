@@ -35,11 +35,6 @@ export default function NavBar() {
                     <Nav.Link href="/sizes"><Link>Sizes</Link></Nav.Link>
                     <Nav.Link href="/switches"><Link>Switches</Link></Nav.Link>                    
                     <Nav.Link href="/mods"><Link>Modifications</Link></Nav.Link>
-                    <NavDropdown title={<span className="dropdown-style">Pre-Builts</span>} id="prebuilt-dropdown">
-                        <NavDropdown.Item href="/budget/affordable" style={{fontSize:"16px"}}>Affordable</NavDropdown.Item>
-                        <NavDropdown.Item href="/budget/midrange" style={{fontSize:"16px"}}>Mid Range</NavDropdown.Item>
-                        <NavDropdown.Item href="/budget/expensive" style={{fontSize:"16px"}}>Expensive</NavDropdown.Item>
-                    </NavDropdown>
                 </Nav>
             </Navbar.Collapse>     
         </Navbar>
